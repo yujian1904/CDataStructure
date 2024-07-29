@@ -88,6 +88,12 @@ ADT：一个数学模型以及定义在此数学模型上的一组操作
 
 数据元素的个数n定义为表的长度，n=0时为空表
 
+(a~1~,a~2~, ··· a~i-1~, a~i~,a~i+1~,···,a~n~)
+
+![image-20240729085424060](D:\CSFiles\CodeProject\CDataStructure\assets\image-20240729085424060.png)
+
+![image-20240729085748568](D:\CSFiles\CodeProject\CDataStructure\assets\image-20240729085748568.png)
+
 
 
 ## 树形结构
