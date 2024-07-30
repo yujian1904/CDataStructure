@@ -94,7 +94,13 @@ ADT：一个数学模型以及定义在此数学模型上的一组操作
 
 ![image-20240729085748568](D:\CSFiles\CodeProject\CDataStructure\assets\image-20240729085748568.png)
 
+### 线性表的顺序实现
 
+使用数组实现
+
+LOC(a~i+1~)=LOC(a~i~)+l	每个元素占l个存储单元
+
+LOC(a~i~)=LOC(a~1~)+(i-1)*l
 
 ## 树形结构
 
