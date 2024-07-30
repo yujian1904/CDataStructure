@@ -90,9 +90,9 @@ ADT：一个数学模型以及定义在此数学模型上的一组操作
 
 (a~1~,a~2~, ··· a~i-1~, a~i~,a~i+1~,···,a~n~)
 
-![image-20240729085424060](D:\CSFiles\CodeProject\CDataStructure\assets\image-20240729085424060.png)
+![image-20240729085424060](..\CDataStructure\assets\image-20240729085424060.png)
 
-![image-20240729085748568](D:\CSFiles\CodeProject\CDataStructure\assets\image-20240729085748568.png)
+![image-20240729085748568](..\CDataStructure\assets\image-20240729085748568.png)
 
 ### 线性表的顺序实现
 
@@ -100,7 +100,13 @@ ADT：一个数学模型以及定义在此数学模型上的一组操作
 
 LOC(a~i+1~)=LOC(a~i~)+l	每个元素占l个存储单元
 
-LOC(a~i~)=LOC(a~1~)+(i-1)*l
+LOC(a ~i~ )=LOC(a~1~)+(i-1)*l
+
+逻辑位序和物理位序相差~1~
+
+
+
+index = Loc -1
 
 ## 树形结构
 
