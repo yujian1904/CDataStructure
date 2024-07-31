@@ -5,5 +5,7 @@ add_executable(CDataStructure
 main.c
 Linear/sqlist/sqlist.c
 Linear/sqlist/sqlist.h
+Linear/LinkList/LinkList.c
+Linear/LinkList/LinkList.h
 )
 
