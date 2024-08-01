@@ -25,7 +25,7 @@ Status DestroyList_L(LinkList L)
     {
         p = L;
         L = L->next;
-        free(p)
+        free(p);
     }
     return OK;
 }

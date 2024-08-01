@@ -20,7 +20,7 @@ typedef struct Lnode
     struct Lnode *next;
 } Lnode, *LinkList; // Lnode表示节点，LinkList表示链表亦头结点
 
-Status InitList_L(LinkList *L);
+Status InitList_L(LinkList L);
 
 int ListEmpty(const LinkList L);
 
