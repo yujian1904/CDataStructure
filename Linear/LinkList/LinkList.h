@@ -26,4 +26,15 @@ int ListEmpty(const LinkList L);
 
 Status DestroyList_L(LinkList L);
 
+Status ClearList(LinkList L);
+
+int GetListLength(const LinkList L);
+
+Status GetElem_L(LinkList L, int i, ElemType e);
+
+Lnode *LocateElem_Le(LinkList L, ElemType e);
+
+int LocateElem_Li(LinkList L, ElemType e);
+
+Status ListInsert_L(LinkList L, int i, ElemType e);
 #endif

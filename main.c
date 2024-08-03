@@ -1,13 +1,22 @@
-#include "Linear/sqlist/sqlist.h"
 #include <stdio.h>
 #include <stdlib.h>
+struct test
+{
+    int dig;
+};
+
 int main()
 {
-    Sqlist L;
+    struct test *a;
+    struct test b;
+    a = &b;
 
-    InitList_Sq(&L);
-    ListInsert_Sq(&L, 1, 32);
-    printf("%d", L.elem[0]);
-    DestroyList(&L);
+    int num = 11;
+    int *p = &num;
+    if (a->dig = *p)
+    {
+        printf("xiagndeng ");
+    }
+
     return 0;
 }

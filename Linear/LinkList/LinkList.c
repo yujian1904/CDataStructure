@@ -29,3 +29,94 @@ Status DestroyList_L(LinkList L)
     }
     return OK;
 }
+
+Status ClearList(LinkList L)
+{
+    Lnode *p;
+    while (L->next)
+    {
+        p = L->next;
+        L->next = p->next;
+        free(p);
+    }
+    return OK;
+}
+
+int GetListLength(const LinkList L)
+{
+    Lnode *p;
+    int count_elem = 0;
+    p = L->next;
+    while (p)
+    {
+        count_elem++;
+        p = p->next;
+    }
+    return count_elem;
+}
+
+Status GetElem_L(LinkList L, int i, ElemType e)
+{
+    Lnode *p;
+    int index = 1;
+    p = L->next;
+    while (p && index < i)
+    {
+        p = p->next;
+        index++;
+    }
+    if (!p || i < index)
+    {
+        return ERROR;
+    }
+    e = p->data;
+    return OK;
+}
+Lnode *LocateElem_Le(LinkList L, ElemType e)
+{
+    Lnode *p;
+    p = L->next;
+    while (p && p->data != e)
+    {
+        p = p->next;
+    }
+    return p;
+}
+
+int LocateElem_Li(LinkList L, ElemType e)
+{ // 返回位置序号
+    Lnode *p;
+    int index = 1;
+    p = L->next;
+    while (p && p->data != e)
+    {
+        p = p->next;
+        index++;
+    }
+    if (p)
+        return index;
+    else
+        return 0;
+}
+
+Status ListInsert_L(LinkList L, int i, ElemType e)
+{
+    Lnode *p;
+    int index = 1;
+    p = L->next;
+    while (p && index < i - 1)
+    {
+        p = p->next;
+        index++;
+    }
+    if (!p || i < index)
+    {
+        return ERROR;
+    }
+
+    Lnode *ins = (Lnode *)malloc(sizeof(Lnode));
+    ins->data = e;
+    ins->next = p->next;
+    p->next = ins;
+    return OK;
+}
