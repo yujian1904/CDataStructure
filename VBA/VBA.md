@@ -190,6 +190,42 @@ End Function
 Trim(Range())
 ~~~
 
+- 去除字符串内的空格
+
+~~~visual basic
+Dim x As String
+x = " yu    jian "
+x = Replace(x, " ", "")
+MsgBox x
+~~~
+
+- 大小写转换
+
+~~~visual basic
+Ucase()
+Lcase()
+~~~
+
+- 字符串截取
+
+~~~visual basic
+x = left(x,3)
+x = right(x,3)
+x = Mid(x,begin_index,char_num)
+~~~
+
+- 返回子串出现的位置
+
+~~~visual basic
+index = InStr(x,"子串")
+~~~
+
+- 字符串截取:使用“”中的字符将字符串截为n段
+
+~~~visual basic
+Split(x,"-")(2)
+~~~
+
 
 
 # 其他
